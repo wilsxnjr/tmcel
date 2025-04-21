@@ -16,6 +16,25 @@
   height: 1rem;
 }
 
+.titulo-linha::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  bottom: -5px;
+  width: 50%;
+  height: 2px;
+  left: 25%;
+  background-color: #008970;
+}
+
+.arrow-news::after {
+  content: "";
+  background: url(./assets/arrow-2.svg) no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

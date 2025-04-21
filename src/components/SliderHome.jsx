@@ -11,21 +11,21 @@ const SliderHome = () => {
   return (
     <>
       <div
-        className="embla overflow-hidden max-h-[320px] flex justify-center items-center"
+        className="embla overflow-hidden max-h-[340px] flex justify-center items-center"
         ref={emblaRef}
       >
         <div className="embla__container flex">
           <div className="embla__slide flex-none basis-full">
-            <img className="w-full" src={iphone} alt="" />
+            <img className="w-full h-full" src={iphone} alt="" />
           </div>
           <div className="embla__slide flex-none basis-full">
-            <img src={cartao} alt="" />
+            <img className="w-full h-full" src={cartao} alt="" />
           </div>
           <div className="embla__slide flex-none basis-full">
-            <img src={oferta} alt="" />
+            <img className="w-full h-full" src={oferta} alt="" />
           </div>
           <div className="embla__slide flex-none basis-full">
-            <img src={juntos} alt="" />
+            <img className="w-full h-full" src={juntos} alt="" />
           </div>
         </div>
       </div>
