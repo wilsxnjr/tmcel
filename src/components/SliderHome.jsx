@@ -9,7 +9,7 @@ import Autoplay from "embla-carousel-autoplay";
 const SliderHome = () => {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
   return (
-    <>
+    <section className="pt-[104px]">
       <div
         className="embla overflow-hidden max-h-[340px] flex justify-center items-center"
         ref={emblaRef}
@@ -29,7 +29,7 @@ const SliderHome = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

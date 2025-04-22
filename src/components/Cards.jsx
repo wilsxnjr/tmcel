@@ -12,7 +12,9 @@ const Cards = () => {
     <>
       <section className="py-8 md:py-16">
         <div className="max-w-[1250px] m-auto px-4 grid">
-          <h2 className=" justify-self-center mb-8 text-lg font-medium titulo-linha relative">Nossos Serviços</h2>
+          <h2 className=" justify-self-center mb-8 text-lg font-medium titulo-linha relative">
+            Nossos Serviços
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             {[
               {
@@ -59,51 +61,58 @@ const Cards = () => {
 
       <section className="pb-16">
         <div className="max-w-[1250px] m-auto px-4 grid">
-        <h2 className=" justify-self-center mb-8 text-lg font-medium titulo-linha relative">Notícias</h2>
+          <h2 className=" justify-self-center mb-8 text-lg font-medium titulo-linha relative">
+            Notícias
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {
-              [
-                {
-                  id: 1,
-                  imagem: palestra,
-                  titulo: "Descoberta: Uma jornada de autoestima",
-                  paragrafo: "0 Comentários / Março 28, 2024",
-                  path: "/"
-                },
-                {
-                  id: 2,
-                  imagem: natal,
-                  titulo: "Natal solidário da TMCEL",
-                  paragrafo: "0 Comentários / Dezembro 22, 2021",
-                  path: "/"
-                },
-                {
-                  id: 3,
-                  imagem: onu,
-                  titulo: "TMCEL e ONU estreiam parceria",
-                  paragrafo: "0 Comentários / Dezembro 4, 2020",
-                  path: "/"
-                },
-                {
-                  id: 4,
-                  imagem: i4g,
-                  titulo: "TMCEL expande tecnologia 4G",
-                  paragrafo: "0 Comentários / Novembro 1, 2021",
-                  path: "/"
-                },
-              ].map(({id, imagem, titulo, paragrafo, path}) => (
-                <div className="grid gap-2 justify-center" key={id}>
-                  <div>
-                    <img src={imagem} alt="" />
-                  </div>
-                  <div>
-                    <h2 className="text-[15px] font-semibold">{titulo}</h2>
-                    <p className="text-[14px] text-secondary-foreground">{paragrafo}</p>
-                  </div>
-                  <a className="text-secondary text-[14px] justify-self-start arrow-news relative flex items-center" href={path}>Ler mais</a>
+            {[
+              {
+                id: 1,
+                imagem: palestra,
+                titulo: "Descoberta: Uma jornada de autoestima",
+                paragrafo: "0 Comentários / Março 28, 2024",
+                path: "/",
+              },
+              {
+                id: 2,
+                imagem: natal,
+                titulo: "Natal solidário da TMCEL",
+                paragrafo: "0 Comentários / Dezembro 22, 2021",
+                path: "/",
+              },
+              {
+                id: 3,
+                imagem: onu,
+                titulo: "TMCEL e ONU estreiam parceria",
+                paragrafo: "0 Comentários / Dezembro 4, 2020",
+                path: "/",
+              },
+              {
+                id: 4,
+                imagem: i4g,
+                titulo: "TMCEL expande tecnologia 4G",
+                paragrafo: "0 Comentários / Novembro 1, 2021",
+                path: "/",
+              },
+            ].map(({ id, imagem, titulo, paragrafo, path }) => (
+              <div className="grid gap-2 justify-center" key={id}>
+                <div>
+                  <img src={imagem} alt="" />
                 </div>
-              ))
-            }
+                <div>
+                  <h2 className="text-[15px] font-semibold">{titulo}</h2>
+                  <p className="text-[14px] text-secondary-foreground">
+                    {paragrafo}
+                  </p>
+                </div>
+                <a
+                  className="text-secondary text-[14px] justify-self-start arrow-news relative flex items-center"
+                  href={path}
+                >
+                  Ler mais
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
