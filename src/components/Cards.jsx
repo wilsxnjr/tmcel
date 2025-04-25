@@ -61,10 +61,10 @@ const Cards = () => {
 
       <section className="pb-16">
         <div className="max-w-[1250px] m-auto px-4 grid">
-          <h2 className=" justify-self-center mb-8 text-lg font-medium titulo-linha relative">
+          <h2 className="justify-self-center mb-8 text-lg font-medium titulo-linha relative">
             Notícias
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 id: 1,

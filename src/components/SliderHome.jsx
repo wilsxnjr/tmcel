@@ -11,7 +11,7 @@ const SliderHome = () => {
   return (
     <section className="pt-[104px]">
       <div
-        className="embla overflow-hidden max-h-[340px] flex justify-center items-center"
+        className="embla overflow-hidden max-h-[360px] flex justify-center items-center"
         ref={emblaRef}
       >
         <div className="embla__container flex">

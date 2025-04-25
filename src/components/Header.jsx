@@ -79,7 +79,7 @@ const Header = () => {
                 ))}
               </ul>
 
-              <ul className={`z-10 absolute xl:hidden top-[104px] left-0 w-full bg-primary flex flex-col items-center font-medium text-base transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"}`} style={{transition: "transform 0.3s ease, opacity 0.3s ease "}}>
+              <ul className={`z-10 absolute xl:hidden top-[104px] left-0 w-full bg-primary flex flex-col items-center font-medium text-base transform transition-transform ${isMenuOpen ? "block" : "hidden"}`} style={{transition: "transform 0.3s ease, opacity 0.3s ease "}}>
                 {headerSecond.map(({nameLink, path}) => (
                   <li className="w-full flex" key={nameLink}><a className="w-full text-secondary p-4 text-center hover:bg-secondary hover:text-primary transition duration-300" href={path}>{nameLink}</a></li>
                 ))}
