@@ -16,8 +16,8 @@ const Footer = () => {
             <p>+258822172482 ou +258822172313</p>
             <p>+25821351100 ou +258822172100</p>
           </div>
-          <div className="justify-self-center mt-8">
-            <img src={sorriso} alt="" />
+          <div className="mt-8">
+            <img src={sorriso} className="my-0 m-auto" alt="" />
           </div>
         </div>
         <div>
