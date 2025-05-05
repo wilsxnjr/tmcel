@@ -15,12 +15,12 @@ const Cards = () => {
           <h2 className=" justify-self-center mb-8 text-lg font-medium titulo-linha relative">
             Nossos Serviços
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
             {[
               {
                 img: bandalarga,
                 title: "Banda Larga",
-                text: "É o serviço de Internet suportado pela tecnologia ADSL  da  Tmcel sendo a mais rápido.",
+                text: "É o serviço de Internet suportado pela tecnologia ADSL da Tmcel sendo a mais rápido.",
               },
               {
                 img: netgiro,
@@ -40,7 +40,7 @@ const Cards = () => {
             ].map((card, index) => (
               <div
                 key={index}
-                className="grid gap-4 p-8 border rounded-xl duration-300 hover:shadow-md"
+                className="grid gap-4 p-8 border rounded-[16px] duration-300 transform hover:-translate-y-2 hover:shadow-md"
               >
                 <img className="w-12" src={card.img} alt={card.title} />
                 <h3 className="font-medium">{card.title}</h3>
